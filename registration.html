@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+     <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="feedback">
+        <form action="index.html">
+            <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="Austrilia">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+<br>
+<label for="checkbox">Hostels are clean or not:</label>
+  <label><input type=checkbox checked= checked name=cheese disabled=disabled>Yes</label>
+  <label><input type=checkbox checked= checked name=cheese disabled=disabled>NO</label><br>
+    <textarea id="subject" name="subject" placeholder="Any Comments." style="height:200px"></textarea>
+    <br>
+    <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+  <label for="myfile">Select a file:</label>
+   <input type="file" id="myfile" name="myfile">
+
+    
+    
+<button onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+  alert("Do you want to submit");
+}
+</script>
+     </form>
+    </div>
+</body>
+</html>
